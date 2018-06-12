@@ -1,14 +1,14 @@
 [
 {
-  "modid": "examplemod",
-  "name": "Example Mod",
-  "description": "Example placeholder mod.",
-  "version": "${version}",
-  "mcversion": "${mcversion}",
-  "url": "",
+  "modid": "lightmod",
+  "name": "LightMod",
+  "description": "A way to change glass forever.",
+  "version": "1.0",
+  "mcversion": "1.12.2",
+  "url": "https://minecraft.curseforge.com/projects/lightmod",
   "updateUrl": "",
-  "authorList": ["ExampleDude"],
-  "credits": "The Forge and FML guys, for making this example",
+  "authorList": ["AmeliaLotus"],
+  "credits": "To my wonderful wife! I make this for you!",
   "logoFile": "",
   "screenshots": [],
   "dependencies": []
