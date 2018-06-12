@@ -1,0 +1,35 @@
+
+//Items
+
+//item.ruby.name=Ruby
+//item.obsidian_ingot.name=Obsidian Ingot
+
+//Blocks
+//tile.ruby_block.name=Block of Ruby
+
+tile.lighted_glass_black.name=Black Lighted Glass
+tile.lighted_glass_block.name=White Lighted Glass
+tile.lighted_glass_blue.name=Blue Lighted Glass
+tile.lighted_glass_brown.name=Brown Lighted Glass
+tile.lighted_glass_cyan.name=Cyan Lighted Glass
+tile.lighted_glass_gray.name=Gray Lighted Glass
+tile.lighted_glass_green.name=Green Lighted Glass
+tile.lighted_glass_lightblue.name=Light Blue Lighted Glass
+tile.lighted_glass_lightgray.name=Light Gray Lighted Glass
+tile.lighted_glass_lime.name=Lime Lighted Glass
+tile.lighted_glass_magenta.name=Magenta Lighted Glass
+tile.lighted_glass_orange.name=Orange Lighted Glass
+tile.lighted_glass_pink.name=Pink Lighted Glass
+tile.lighted_glass_purple.name=Purple Lighted Glass
+tile.lighted_glass_red.name=Red Lighted Glass
+tile.lighted_glass_yellow.name=Yellow Lighted Glass
+
+//Tools
+//item.ruby_sword.name=Ruby Sword
+//item.ruby_shovel.name=Ruby Shovel
+//item.ruby_pickaxe.name=Ruby Pickaxe
+//item.ruby_axe.name=Ruby Axe
+//item.ruby_hoe.name=Ruby Hoe
+
+//Creative Tab
+itemGroup.tab_LightMod=Light Mod

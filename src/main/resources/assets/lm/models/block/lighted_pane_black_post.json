@@ -1,0 +1,7 @@
+{
+    "parent": "block/pane_post",
+    "textures": {
+        "edge": "blocks/lighted_pane_black",
+        "pane": "lm:blocks/lighted_glass_black"
+    }
+}
