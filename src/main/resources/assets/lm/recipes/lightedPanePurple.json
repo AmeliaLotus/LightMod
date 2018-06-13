@@ -1,0 +1,23 @@
+{ 
+    "type": "minecraft:crafting_shapeless",
+
+    "ingredients": 
+    [
+
+    {
+      "item": "lm:lighted_pane_white"
+    },
+    
+    {
+      "item": "minecraft:dye",
+      "data": 5
+    }
+    
+    ],
+
+    "result": 
+    {
+        "item": "lm:lighted_pane_purple",
+        "count": 1
+    }
+}

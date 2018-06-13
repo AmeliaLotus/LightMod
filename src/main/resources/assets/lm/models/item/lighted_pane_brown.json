@@ -1,6 +1,6 @@
 {
     "parent": "item/generated",
     "textures": {
-        "layer0": "blocks/glass_brown"
+        "layer0": "lm:blocks/brown_pane_item"
     }
 }

@@ -1,6 +1,6 @@
 {
     "parent": "block/pane_noside_alt",
     "textures": {
-        "pane": "blocks/glass_pink"
+        "pane": "lm:blocks/lighted_glass_pink"
     }
 }

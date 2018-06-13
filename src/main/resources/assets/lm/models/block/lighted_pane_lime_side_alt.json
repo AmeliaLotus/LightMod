@@ -1,7 +1,7 @@
 {
     "parent": "block/pane_side_alt",
     "textures": {
-        "edge": "blocks/glass_pane_top_lime",
-        "pane": "blocks/glass_lime"
+        "edge": "lm:blocks/lighted_pane_lime",
+        "pane": "lm:blocks/lighted_glass_lime"
     }
 }
