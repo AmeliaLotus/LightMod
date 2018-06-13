@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+   
+    "pattern":
+    [
+        "CCC",
+        "CCC"
+    ],
+   
+    "key":
+    {
+        "C":
+        {
+            "item": "lm:lighted_glass_red"
+        }
+    },
+   
+    "result":
+    {
+        "item": "lm:lighted_pane_red",
+        "count": 16
+    }
+}
