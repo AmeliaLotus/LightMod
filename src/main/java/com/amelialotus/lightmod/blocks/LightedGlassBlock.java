@@ -27,7 +27,7 @@ public class LightedGlassBlock extends BlockBase
 	{
 		super(name, material);		
 		// set the creative tab. Pro-modders add their own creative tab.
-		this.setCreativeTab(Main.tabLightMod);
+		//this.setCreativeTab(Main.tabLightMod);
 		// Walk Over Sound Type
 		this.setSoundType(SoundType.GLASS);
 		/*
@@ -56,7 +56,7 @@ public class LightedGlassBlock extends BlockBase
 		return false;
 	}
 	
-	// Somehow makes the block act like glass...
+	// Somehow makes the block act like glass... If there's a purple thing under the "glass" block, this needs to be added.
 	@SideOnly(Side.CLIENT)
 	public BlockRenderLayer getBlockLayer() {
 		return BlockRenderLayer.CUTOUT;

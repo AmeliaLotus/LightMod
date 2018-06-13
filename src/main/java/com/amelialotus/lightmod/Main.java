@@ -17,6 +17,8 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
 
 @Mod(modid = Reference.MOD_ID, name = Reference.NAME, version = Reference.VERSION)
+//@NetworkMod(clientSideRequired=true,serverSideRequired=true)
+
 public class Main {
 	
 	@Instance

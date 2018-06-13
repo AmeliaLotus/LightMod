@@ -1,7 +1,7 @@
 {
     "parent": "block/pane_side",
     "textures": {
-        "edge": "blocks/glass_pane_top_black",
+        "edge": "lm:blocks/lighted_pane_black",
         "pane": "lm:blocks/lighted_glass_black"
     }
 }

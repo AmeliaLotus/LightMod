@@ -5,18 +5,19 @@
     [
 
     {
-      "item": "minecraft:glass"
+      "item": "lm:lighted_glass_block"
     },
     
     {
-      "item": "minecraft:glowstone"
+      "item": "minecraft:dye",
+      "data": 4
     }
     
     ],
 
     "result": 
     {
-        "item": "lm:lighted_glass_block",
-        "count": 4
+        "item": "lm:lighted_glass_blue",
+        "count": 1
     }
 }
