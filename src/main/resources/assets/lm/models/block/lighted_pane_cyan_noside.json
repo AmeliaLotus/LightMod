@@ -1,5 +1,5 @@
 {
-    "parent": "block/pane_noside",
+    "parent": "lm:block/pane_noside",
     "textures": {
         "pane": "lm:blocks/lighted_glass_cyan"
     }

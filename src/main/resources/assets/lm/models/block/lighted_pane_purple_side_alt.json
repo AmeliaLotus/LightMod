@@ -1,5 +1,5 @@
 {
-    "parent": "block/pane_side_alt",
+    "parent": "lm:block/pane_side_alt",
     "textures": {
         "edge": "lm:blocks/lighted_pane_purple",
         "pane": "lm:blocks/lighted_glass_purple"

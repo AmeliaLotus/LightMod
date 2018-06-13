@@ -173,10 +173,10 @@ public class LightedGlassPane extends BlockBase
     /**
      * Convert the BlockState into the correct metadata value
      */
-    public int getMetaFromState(IBlockState state)
-    {
-        return 0;
-    }
+    //public int getMetaFromState(IBlockState state)
+    //{
+    //    return 0;
+    //}
 
     /**
      * Returns the blockstate with the given rotation from the passed blockstate. If inapplicable, returns the passed

@@ -1,5 +1,5 @@
 {
-    "parent": "block/pane_side",
+    "parent": "lm:block/pane_side",
     "textures": {
         "edge": "lm:blocks/lighted_pane_yellow",
         "pane": "lm:blocks/lighted_glass_yellow"
