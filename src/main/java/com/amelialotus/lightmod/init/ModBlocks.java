@@ -41,19 +41,19 @@ public class ModBlocks
 	
 	//Glass Panes!
 	public static final Block LIGHTED_PANE_WHITE = new LightedGlassPane("lighted_pane_white", Material.GLASS);
-	//public static final Block LIGHTED_PANE_BLACK = new LightedGlassPane("lighted_pane_black", Material.GLASS);
-	//public static final Block LIGHTED_PANE_ORANGE = new LightedGlassPane("lighted_pane_orange", Material.GLASS);
-	//public static final Block LIGHTED_PANE_BLUE = new LightedGlassPane("lighted_pane_blue", Material.GLASS);
-	//public static final Block LIGHTED_PANE_LIGHTBLUE = new LightedGlassPane("lighted_pane_lightblue", Material.GLASS);
-	//public static final Block LIGHTED_PANE_BROWN = new LightedGlassPane("lighted_pane_brown", Material.GLASS);
-	//public static final Block LIGHTED_PANE_CYAN = new LightedGlassPane("lighted_pane_cyan", Material.GLASS);
-	//public static final Block LIGHTED_PANE_GRAY = new LightedGlassPane("lighted_pane_gray", Material.GLASS);
-	//public static final Block LIGHTED_PANE_GREEN = new LightedGlassPane("lighted_pane_green", Material.GLASS);
-	//public static final Block LIGHTED_PANE_LIGHTGRAY = new LightedGlassPane("lighted_pane_lightgray", Material.GLASS);
-	//public static final Block LIGHTED_PANE_LIME = new LightedGlassPane("lighted_pane_lime", Material.GLASS);
-	//public static final Block LIGHTED_PANE_MAGENTA = new LightedGlassPane("lighted_pane_magenta", Material.GLASS);
-	//public static final Block LIGHTED_PANE_YELLOW = new LightedGlassPane("lighted_pane_yellow", Material.GLASS);
-	//public static final Block LIGHTED_PANE_PINK = new LightedGlassPane("lighted_pane_pink", Material.GLASS);
-	//public static final Block LIGHTED_PANE_PURPLE = new LightedGlassPane("lighted_pane_purple", Material.GLASS);
-	//public static final Block LIGHTED_PANE_RED = new LightedGlassPane("lighted_pane_red", Material.GLASS);
+	public static final Block LIGHTED_PANE_BLACK = new LightedGlassPane("lighted_pane_black", Material.GLASS);
+	public static final Block LIGHTED_PANE_ORANGE = new LightedGlassPane("lighted_pane_orange", Material.GLASS);
+	public static final Block LIGHTED_PANE_BLUE = new LightedGlassPane("lighted_pane_blue", Material.GLASS);
+	public static final Block LIGHTED_PANE_LIGHTBLUE = new LightedGlassPane("lighted_pane_lightblue", Material.GLASS);
+	public static final Block LIGHTED_PANE_BROWN = new LightedGlassPane("lighted_pane_brown", Material.GLASS);
+	public static final Block LIGHTED_PANE_CYAN = new LightedGlassPane("lighted_pane_cyan", Material.GLASS);
+	public static final Block LIGHTED_PANE_GRAY = new LightedGlassPane("lighted_pane_gray", Material.GLASS);
+	public static final Block LIGHTED_PANE_GREEN = new LightedGlassPane("lighted_pane_green", Material.GLASS);
+	public static final Block LIGHTED_PANE_LIGHTGRAY = new LightedGlassPane("lighted_pane_lightgray", Material.GLASS);
+	public static final Block LIGHTED_PANE_LIME = new LightedGlassPane("lighted_pane_lime", Material.GLASS);
+	public static final Block LIGHTED_PANE_MAGENTA = new LightedGlassPane("lighted_pane_magenta", Material.GLASS);
+	public static final Block LIGHTED_PANE_YELLOW = new LightedGlassPane("lighted_pane_yellow", Material.GLASS);
+	public static final Block LIGHTED_PANE_PINK = new LightedGlassPane("lighted_pane_pink", Material.GLASS);
+	public static final Block LIGHTED_PANE_PURPLE = new LightedGlassPane("lighted_pane_purple", Material.GLASS);
+	public static final Block LIGHTED_PANE_RED = new LightedGlassPane("lighted_pane_red", Material.GLASS);
 }

@@ -1,0 +1,23 @@
+{ 
+    "type": "minecraft:crafting_shapeless",
+
+    "ingredients": 
+    [
+
+    {
+      "item": "lm:lighted_glass_block"
+    },
+    
+    {
+      "item": "minecraft:dye",
+      "data": 12
+    }
+    
+    ],
+
+    "result": 
+    {
+        "item": "lm:lighted_glass_lightblue",
+        "count": 1
+    }
+}

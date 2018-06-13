@@ -1,3 +1,6 @@
 {
-   "parent": "lm:block/lighted_pane_green"
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "lm:blocks/green_pane_item"
+    }
 }

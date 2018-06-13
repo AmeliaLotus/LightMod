@@ -1,6 +1,7 @@
 package com.amelialotus.lightmod.blocks;
 
 import java.util.List;
+import java.util.Random;
 
 import javax.annotation.Nullable;
 
@@ -19,6 +20,8 @@ import net.minecraft.block.state.IBlockState;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.Entity;
 import net.minecraft.init.Blocks;
+import net.minecraft.init.Items;
+import net.minecraft.item.Item;
 import net.minecraft.util.BlockRenderLayer;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.Mirror;
@@ -32,22 +35,24 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class LightedGlassPane extends BlockBase
 {
-	//Creates the ability to place the windows appropriately!
-	public static final PropertyBool NORTH = PropertyBool.create("north");
+	/** Whether this pane connects in the northern direction */
+    public static final PropertyBool NORTH = PropertyBool.create("north");
+    /** Whether this pane connects in the eastern direction */
     public static final PropertyBool EAST = PropertyBool.create("east");
+    /** Whether this pane connects in the southern direction */
     public static final PropertyBool SOUTH = PropertyBool.create("south");
+    /** Whether this pane connects in the western direction */
     public static final PropertyBool WEST = PropertyBool.create("west");
     
-    protected static final AxisAlignedBB[] AABB_BY_INDEX = new AxisAlignedBB[] {new AxisAlignedBB(0.4375D, 0.0D, 0.4375D, 0.5625D, 1.0D, 0.5625D), new AxisAlignedBB(0.4375D, 0.0D, 0.4375D, 0.5625D, 1.0D, 1.0D), new AxisAlignedBB(0.0D, 0.0D, 0.4375D, 0.5625D, 1.0D, 0.5625D), new AxisAlignedBB(0.0D, 0.0D, 0.4375D, 0.5625D, 1.0D, 1.0D), new AxisAlignedBB(0.4375D, 0.0D, 0.0D, 0.5625D, 1.0D, 0.5625D), new AxisAlignedBB(0.4375D, 0.0D, 0.0D, 0.5625D, 1.0D, 1.0D), new AxisAlignedBB(0.0D, 0.0D, 0.0D, 0.5625D, 1.0D, 0.5625D), new AxisAlignedBB(0.0D, 0.0D, 0.0D, 0.5625D, 1.0D, 1.0D), new AxisAlignedBB(0.4375D, 0.0D, 0.4375D, 1.0D, 1.0D, 0.5625D), new AxisAlignedBB(0.4375D, 0.0D, 0.4375D, 1.0D, 1.0D, 1.0D), new AxisAlignedBB(0.0D, 0.0D, 0.4375D, 1.0D, 1.0D, 0.5625D), new AxisAlignedBB(0.0D, 0.0D, 0.4375D, 1.0D, 1.0D, 1.0D), new AxisAlignedBB(0.4375D, 0.0D, 0.0D, 1.0D, 1.0D, 0.5625D), new AxisAlignedBB(0.4375D, 0.0D, 0.0D, 1.0D, 1.0D, 1.0D), new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 1.0D, 0.5625D), new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 1.0D, 1.0D)};    
+    protected static final AxisAlignedBB[] AABB_BY_INDEX = new AxisAlignedBB[] {new AxisAlignedBB(0.4375D, 0.0D, 0.4375D, 0.5625D, 1.0D, 0.5625D), new AxisAlignedBB(0.4375D, 0.0D, 0.4375D, 0.5625D, 1.0D, 1.0D), new AxisAlignedBB(0.0D, 0.0D, 0.4375D, 0.5625D, 1.0D, 0.5625D), new AxisAlignedBB(0.0D, 0.0D, 0.4375D, 0.5625D, 1.0D, 1.0D), new AxisAlignedBB(0.4375D, 0.0D, 0.0D, 0.5625D, 1.0D, 0.5625D), new AxisAlignedBB(0.4375D, 0.0D, 0.0D, 0.5625D, 1.0D, 1.0D), new AxisAlignedBB(0.0D, 0.0D, 0.0D, 0.5625D, 1.0D, 0.5625D), new AxisAlignedBB(0.0D, 0.0D, 0.0D, 0.5625D, 1.0D, 1.0D), new AxisAlignedBB(0.4375D, 0.0D, 0.4375D, 1.0D, 1.0D, 0.5625D), new AxisAlignedBB(0.4375D, 0.0D, 0.4375D, 1.0D, 1.0D, 1.0D), new AxisAlignedBB(0.0D, 0.0D, 0.4375D, 1.0D, 1.0D, 0.5625D), new AxisAlignedBB(0.0D, 0.0D, 0.4375D, 1.0D, 1.0D, 1.0D), new AxisAlignedBB(0.4375D, 0.0D, 0.0D, 1.0D, 1.0D, 0.5625D), new AxisAlignedBB(0.4375D, 0.0D, 0.0D, 1.0D, 1.0D, 1.0D), new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 1.0D, 0.5625D), new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 1.0D, 1.0D)};
     
     public LightedGlassPane(String name, Material materialIn)
     {
         super(name, materialIn);
         //this.setCreativeTab(Main.tabLightMod);
-		this.setResistance(2000.0F);
-		this.setLightLevel(1.0F);
-        
         this.setDefaultState(this.blockState.getBaseState().withProperty(NORTH, Boolean.valueOf(false)).withProperty(EAST, Boolean.valueOf(false)).withProperty(SOUTH, Boolean.valueOf(false)).withProperty(WEST, Boolean.valueOf(false)));
+        this.setResistance(2000.0F);
+		this.setLightLevel(1.0F);
         
     }//end constructor
     
@@ -80,12 +85,12 @@ public class LightedGlassPane extends BlockBase
             addCollisionBoxToList(pos, entityBox, collidingBoxes, AABB_BY_INDEX[getBoundingBoxIndex(EnumFacing.WEST)]);
         }
     }
-    
+
     private static int getBoundingBoxIndex(EnumFacing p_185729_0_)
     {
         return 1 << p_185729_0_.getHorizontalIndex();
     }
-    
+
     public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos)
     {
         state = this.getActualState(state, source, pos);
@@ -130,7 +135,10 @@ public class LightedGlassPane extends BlockBase
                     .withProperty(WEST,  canPaneConnectTo(worldIn, pos, EnumFacing.WEST))
                     .withProperty(EAST,  canPaneConnectTo(worldIn, pos, EnumFacing.EAST));
     }
-    
+
+    /**
+     * Used to determine ambient occlusion and culling when rebuilding chunks for render
+     */
     public boolean isOpaqueCube(IBlockState state)
     {
         return false;
@@ -140,7 +148,7 @@ public class LightedGlassPane extends BlockBase
     {
         return false;
     }
-    
+
     @SideOnly(Side.CLIENT)
     public boolean shouldSideBeRendered(IBlockState blockState, IBlockAccess blockAccess, BlockPos pos, EnumFacing side)
     {
@@ -153,12 +161,12 @@ public class LightedGlassPane extends BlockBase
         BlockFaceShape blockfaceshape = state.getBlockFaceShape(p_193393_1_, pos, facing);
         return !isExcepBlockForAttachWithPiston(block) && blockfaceshape == BlockFaceShape.SOLID || blockfaceshape == BlockFaceShape.MIDDLE_POLE_THIN;
     }
-    
+
     protected static boolean isExcepBlockForAttachWithPiston(Block p_193394_0_)
     {
         return p_193394_0_ instanceof BlockShulkerBox || p_193394_0_ instanceof BlockLeaves || p_193394_0_ == Blocks.BEACON || p_193394_0_ == Blocks.CAULDRON || p_193394_0_ == Blocks.GLOWSTONE || p_193394_0_ == Blocks.ICE || p_193394_0_ == Blocks.SEA_LANTERN || p_193394_0_ == Blocks.PISTON || p_193394_0_ == Blocks.STICKY_PISTON || p_193394_0_ == Blocks.PISTON_HEAD || p_193394_0_ == Blocks.MELON_BLOCK || p_193394_0_ == Blocks.PUMPKIN || p_193394_0_ == Blocks.LIT_PUMPKIN || p_193394_0_ == Blocks.BARRIER;
     }
-    
+
     protected boolean canSilkHarvest()
     {
         return true;
@@ -173,10 +181,10 @@ public class LightedGlassPane extends BlockBase
     /**
      * Convert the BlockState into the correct metadata value
      */
-    //public int getMetaFromState(IBlockState state)
-    //{
-    //    return 0;
-    //}
+    public int getMetaFromState(IBlockState state)
+    {
+        return 0;
+    }
 
     /**
      * Returns the blockstate with the given rotation from the passed blockstate. If inapplicable, returns the passed
@@ -218,7 +226,9 @@ public class LightedGlassPane extends BlockBase
     {
         return new BlockStateContainer(this, new IProperty[] {NORTH, EAST, WEST, SOUTH});
     }
-    
+
+    /* ======================================== FORGE START ======================================== */
+
     @Override
     public boolean canBeConnectedTo(IBlockAccess world, BlockPos pos, EnumFacing facing)
     {
@@ -232,7 +242,9 @@ public class LightedGlassPane extends BlockBase
         IBlockState state = world.getBlockState(other);
         return state.getBlock().canBeConnectedTo(world, other, dir.getOpposite()) || attachesTo(world, state, other, dir.getOpposite());
     }
-    
+
+    /* ======================================== FORGE END ======================================== */
+
     /**
      * Get the geometry of the queried face at the given position and state. This is used to decide whether things like
      * buttons are allowed to be placed on the face, or how glass panes connect to the face, among other things.

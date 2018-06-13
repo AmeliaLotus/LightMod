@@ -1,3 +1,6 @@
 {
-   "parent": "lm:block/lighted_pane_purple"
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "lm:blocks/purple_pane_item"
+    }
 }
