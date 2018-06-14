@@ -43,7 +43,7 @@ public class LightedGlassBlock extends BlockBase
 		/*
 		 * How much light the block will give! wiki: minecraft.gamepedia.com/Light
 		 */
-		this.setLightLevel(1.0F);
+		//this.setLightLevel(1.0F);
 		/*
 		 * How easy it is for light to pass through blocks. 0 = light passes through.
 		 */
