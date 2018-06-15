@@ -41,12 +41,13 @@ import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-public class LightedGlassDoor extends BlockDoor
+public class LightedGlassDoor extends BlockDoor implements IHasModel
 {
+	
     public LightedGlassDoor(Material materialIn)
     {
         super(materialIn);
-        //this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH).withProperty(OPEN, Boolean.valueOf(false)).withProperty(HINGE, LightedGlassDoor.EnumHingePosition.LEFT).withProperty(POWERED, Boolean.valueOf(false)).withProperty(HALF, LightedGlassDoor.EnumDoorHalf.LOWER));        
+        this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH).withProperty(OPEN, Boolean.valueOf(false)).withProperty(HINGE, LightedGlassDoor.EnumHingePosition.LEFT).withProperty(POWERED, Boolean.valueOf(false)).withProperty(HALF, LightedGlassDoor.EnumDoorHalf.LOWER));        
         String name = "lighted_door_white";        
         setUnlocalizedName(name);
 		setRegistryName(name);
@@ -54,7 +55,12 @@ public class LightedGlassDoor extends BlockDoor
 		setLightLevel(1.0F);
 		ModBlocks.BLOCKS.add(this);
 		ModItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
-		System.out.println("Door Loaded");
     }
     
+    
+    @Override
+    public void registerModels() {
+        Main.proxy.registerItemRenderer(Item.getItemFromBlock(this), 0, "inventory");
+       
+    }
 }

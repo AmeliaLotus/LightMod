@@ -64,6 +64,6 @@ public class ModBlocks
 	public static final Block LIGHTED_PANE_RED = new LightedGlassPane("lighted_pane_red", Material.GLASS);
 	
 	//Glass Doors!
-	public static final Block LIGHTED_GLASS_DOOR = new LightedGlassDoor("lighted_door_white", Material.GLASS);
+	public static final Block LIGHTED_GLASS_DOOR = new LightedGlassDoor(Material.GLASS);
 	
 	}
