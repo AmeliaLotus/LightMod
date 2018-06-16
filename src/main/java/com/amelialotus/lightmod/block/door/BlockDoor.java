@@ -8,6 +8,7 @@ import com.amelialotus.lightmod.init.ItemInit;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockHorizontal;
 import net.minecraft.block.BlockPlanks;
+import net.minecraft.block.SoundType;
 import net.minecraft.block.material.EnumPushReaction;
 import net.minecraft.block.material.MapColor;
 import net.minecraft.block.material.Material;
@@ -50,12 +51,14 @@ public class BlockDoor extends Block
     protected static final AxisAlignedBB EAST_AABB = new AxisAlignedBB(0.0D, 0.0D, 0.0D, 0.1875D, 1.0D, 1.0D);
     public static boolean powerable = false;
 
-    public BlockDoor(String name, Material materialIn, Boolean powerable, float lightLevel) {
+    public BlockDoor(String name, Material materialIn, Boolean powerable, float lightLevel, float blastResist) {
     	super(materialIn);
     	this.setRegistryName(name);
     	this.setUnlocalizedName(name); 
     	this.powerable = powerable;
     	this.setLightLevel(lightLevel);
+    	this.setResistance(blastResist);
+    	this.setSoundType(SoundType.GLASS);
         this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH).withProperty(OPEN, Boolean.valueOf(false)).withProperty(HINGE, BlockDoor.EnumHingePosition.LEFT).withProperty(POWERED, Boolean.valueOf(false)).withProperty(HALF, BlockDoor.EnumDoorHalf.LOWER));
         BlockInit.BLOCKS.add(this);
         

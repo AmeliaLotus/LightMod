@@ -42,7 +42,7 @@ tile.lighted_pane_purple.name=Purple Lighted Pane
 tile.lighted_pane_red.name=Red Lighted Pane
 
 //Lighted Doors
-item.mydoor.name=My Door
+item.mydoor.name=Lighted Door
 
 //Tools
 //item.ruby_sword.name=Ruby Sword

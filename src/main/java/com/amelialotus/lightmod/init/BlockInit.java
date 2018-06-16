@@ -23,7 +23,7 @@ public class BlockInit
 
 	
 	//Glass Door!!
-	public static final BlockDoor BLOCK_DOOR = new BlockDoor("mydoor", Material.IRON, true, 1F);
+	public static final BlockDoor BLOCK_DOOR = new BlockDoor("mydoor", Material.IRON, true, 1F, 2000.F);
 	
 	//Glass Blocks!
 	
