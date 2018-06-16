@@ -3,8 +3,8 @@ package com.amelialotus.lightmod.blocks.door;
 import java.util.Random;
 
 import com.amelialotus.lightmod.Main;
-import com.amelialotus.lightmod.init.BlockInit;
-import com.amelialotus.lightmod.init.ItemInit;
+import com.amelialotus.lightmod.init.ModBlocks;
+import com.amelialotus.lightmod.init.ModItems;
 import com.amelialotus.lightmod.util.IHasModel;
 
 import net.minecraft.block.Block;
@@ -59,7 +59,7 @@ public class BlockDoor extends Block {
     	this.powerable = powerable;
     	this.setLightLevel(lightLevel);
         this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH).withProperty(OPEN, Boolean.valueOf(false)).withProperty(HINGE, BlockDoor.EnumHingePosition.LEFT).withProperty(POWERED, Boolean.valueOf(false)).withProperty(HALF, BlockDoor.EnumDoorHalf.LOWER));
-        BlockInit.BLOCKS.add(this);
+        ModBlocks.BLOCKS.add(this);
     }
 
     public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {
@@ -230,7 +230,7 @@ public class BlockDoor extends Block {
         //else if (this == Blocks.JUNGLE_DOOR) {return Items.JUNGLE_DOOR;}
         //else if (this == Blocks.ACACIA_DOOR) {return Items.ACACIA_DOOR;}
         //else {return this == Blocks.DARK_OAK_DOOR ? Items.DARK_OAK_DOOR : Items.OAK_DOOR;}
-    	return ItemInit.ITEM_DOOR;
+    	return ModItems.ITEM_DOOR;
     }
 
     public void onBlockHarvested(World worldIn, BlockPos pos, IBlockState state, EntityPlayer player) {

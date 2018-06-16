@@ -27,6 +27,6 @@ public class ModItems
 	//public static final ItemAxe RUBY_AXE = new ToolAxe("ruby_axe", MATERIAL_RUBY);
 	//public static final ItemHoe RUBY_HOE = new ToolHoe("ruby_hoe", MATERIAL_RUBY);
 	
-	public static ItemDoor ITEM_DOOR = new ItemDoor("lighted_door_white", ModBlocks.BLOCK_DOOR);
+	public static ItemDoor ITEM_DOOR = new ItemDoor("mydoor", ModBlocks.BLOCK_DOOR);
 
 }

@@ -1,7 +1,7 @@
 package com.amelialotus.lightmod.blocks.door;
 
 import com.amelialotus.lightmod.Main;
-import com.amelialotus.lightmod.init.ItemInit;
+import com.amelialotus.lightmod.init.ModItems;
 import com.amelialotus.lightmod.util.IHasModel;
 
 import net.minecraft.advancements.CriteriaTriggers;
@@ -34,7 +34,7 @@ public class ItemDoor extends Item implements IHasModel {
 		this.setUnlocalizedName(name);
         this.block = block;
         this.setCreativeTab(CreativeTabs.REDSTONE);
-        ItemInit.ITEMS.add(this);
+        ModItems.ITEMS.add(this);
     }
 
     public EnumActionResult onItemUse(EntityPlayer player, World worldIn, BlockPos pos, EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ) {
