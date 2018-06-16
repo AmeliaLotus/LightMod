@@ -1,4 +1,6 @@
-package com.amelialotus.lightmod.blocks;
+package com.amelialotus.lightmod.block;
+
+import com.amelialotus.lightmod.LightMod;
 
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
@@ -7,9 +9,8 @@ import net.minecraft.util.BlockRenderLayer;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-public class LightedGlassBlock extends BlockBase
+public class LightedGlassBlock extends BlockBase 
 {
-	//public static final PropertyEnum<EnumDyeColor> COLOR = PropertyEnum.<EnumDyeColor>create("color", EnumDyeColor.class);
 	public LightedGlassBlock(String name, Material material) 
 	{
 		super(name, material);		
@@ -36,6 +37,8 @@ public class LightedGlassBlock extends BlockBase
 		 */
 		this.setLightOpacity(0);	
 		
+		//setCreativeTab(LightMod.tabLightMod);
+		
 	} // end constructor
 	
 	@Override
@@ -57,4 +60,5 @@ public class LightedGlassBlock extends BlockBase
 	protected boolean canSilkHarvest() {
 		return true;
 	}
+
 }

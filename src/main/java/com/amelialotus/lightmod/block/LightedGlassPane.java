@@ -1,8 +1,10 @@
-package com.amelialotus.lightmod.blocks;
+package com.amelialotus.lightmod.block;
 
 import java.util.List;
 
 import javax.annotation.Nullable;
+
+import com.amelialotus.lightmod.LightMod;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockLeaves;
@@ -42,10 +44,11 @@ public class LightedGlassPane extends BlockBase
     public LightedGlassPane(String name, Material materialIn)
     {
         super(name, materialIn);
-        //this.setCreativeTab(Main.tabLightMod);
         this.setDefaultState(this.blockState.getBaseState().withProperty(NORTH, Boolean.valueOf(false)).withProperty(EAST, Boolean.valueOf(false)).withProperty(SOUTH, Boolean.valueOf(false)).withProperty(WEST, Boolean.valueOf(false)));
         this.setResistance(2000.0F);
 		this.setLightLevel(1.0F);
+		
+		setCreativeTab(LightMod.tabLightMod);
         
     }//end constructor
     

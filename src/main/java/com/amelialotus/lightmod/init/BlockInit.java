@@ -3,14 +3,14 @@ package com.amelialotus.lightmod.init;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.amelialotus.lightmod.blocks.LightedGlassPane;
-import com.amelialotus.lightmod.blocks.door.BlockDoor;
-import com.amelialotus.lightmod.blocks.LightedGlassBlock;
+import com.amelialotus.lightmod.block.LightedGlassPane;
+import com.amelialotus.lightmod.block.door.BlockDoor;
+import com.amelialotus.lightmod.block.LightedGlassBlock;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 
-public class ModBlocks
+public class BlockInit 
 {
 	public static final List<Block> BLOCKS = new ArrayList<Block>();
 	
@@ -20,8 +20,14 @@ public class ModBlocks
 	 * If using a new class, make sure to import it here!
 	 */
 	//public static final Block RUBY_BLOCK = new RubyBlock("ruby_block", Material.IRON);
+
+	
+	//Glass Door!!
+	public static final BlockDoor BLOCK_DOOR = new BlockDoor("mydoor", Material.IRON, true, 1F);
 	
 	//Glass Blocks!
+	
+	
 	public static final Block LIGHTED_GLASS_BLOCK = new LightedGlassBlock("lighted_glass_block", Material.GLASS);
 	public static final Block LIGHTED_GLASS_BLACK = new LightedGlassBlock("lighted_glass_black", Material.GLASS);
 	public static final Block LIGHTED_GLASS_ORANGE = new LightedGlassBlock("lighted_glass_orange", Material.GLASS);
@@ -56,8 +62,5 @@ public class ModBlocks
 	public static final Block LIGHTED_PANE_PINK = new LightedGlassPane("lighted_pane_pink", Material.GLASS);
 	public static final Block LIGHTED_PANE_PURPLE = new LightedGlassPane("lighted_pane_purple", Material.GLASS);
 	public static final Block LIGHTED_PANE_RED = new LightedGlassPane("lighted_pane_red", Material.GLASS);
-	
-	//Glass Doors!
-	public static final BlockDoor BLOCK_DOOR = new BlockDoor("mydoor", Material.IRON, true, 1F);
-	
-	}
+
+}

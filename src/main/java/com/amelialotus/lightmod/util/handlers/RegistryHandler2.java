@@ -2,7 +2,7 @@ package com.amelialotus.lightmod.util.handlers;
 
 import com.amelialotus.lightmod.init.BlockInit;
 import com.amelialotus.lightmod.init.ItemInit;
-import com.amelialotus.lightmod.util.interfaces.IHasModel;
+import com.amelialotus.lightmod.util.IHasModel;
 
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
@@ -12,9 +12,9 @@ import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
 @EventBusSubscriber
-public class RegistryHandler 
-{
-public static void preInitRegistries() {
+public class RegistryHandler2 {
+
+	public static void preInitRegistries() {
 
 		
 	}
@@ -61,5 +61,5 @@ public static void preInitRegistries() {
 			}
 		}
 	}
-
+	
 }
