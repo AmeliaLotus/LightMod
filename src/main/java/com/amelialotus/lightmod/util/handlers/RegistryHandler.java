@@ -1,8 +1,8 @@
 package com.amelialotus.lightmod.util.handlers;
 
-import com.amelialotus.lightmod.init.ModBlocks;
-import com.amelialotus.lightmod.init.ModItems;
-import com.amelialotus.lightmod.util.IHasModel;
+import com.amelialotus.lightmod.init.BlockInit;
+import com.amelialotus.lightmod.init.ItemInit;
+import com.amelialotus.lightmod.util.interfaces.IHasModel;
 
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
@@ -14,37 +14,38 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 @EventBusSubscriber
 public class RegistryHandler 
 {
-	public static void preInitRegistries() 
-	{
+public static void preInitRegistries() {
+
 		
 	}
 
-	public static void initRegistries() 
-	{
+	public static void initRegistries() {
+
 		
 	}
 
-	public static void postInitRegistries() 
-	{
+	public static void postInitRegistries() {
+
 		
 	}
 	
 	@SubscribeEvent
 	public static void onItemRegister(RegistryEvent.Register<Item> event)
 	{
-		event.getRegistry().registerAll(ModItems.ITEMS.toArray(new Item[0]));
+		event.getRegistry().registerAll(ItemInit.ITEMS.toArray(new Item[0]));
 	}
 	
 	@SubscribeEvent
 	public static void onBlockRegister(RegistryEvent.Register<Block> event)
 	{
-		event.getRegistry().registerAll(ModBlocks.BLOCKS.toArray(new Block[0]));
+		event.getRegistry().registerAll(BlockInit.BLOCKS.toArray(new Block[0]));
+
 	}
 	
 	@SubscribeEvent
 	public static void onModelRegister(ModelRegistryEvent event)
 	{
-		for(Item item : ModItems.ITEMS)
+		for(Item item : ItemInit.ITEMS)
 		{
 			if(item instanceof IHasModel)
 			{
@@ -52,7 +53,7 @@ public class RegistryHandler
 			}
 		}
 		
-		for(Block block : ModBlocks.BLOCKS)
+		for(Block block : BlockInit.BLOCKS)
 		{
 			if(block instanceof IHasModel)
 			{
@@ -60,5 +61,5 @@ public class RegistryHandler
 			}
 		}
 	}
-	
+
 }
