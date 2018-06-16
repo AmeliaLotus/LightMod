@@ -42,6 +42,9 @@ tile.lighted_pane_pink.name=Pink Lighted Pane
 tile.lighted_pane_purple.name=Purple Lighted Pane
 tile.lighted_pane_red.name=Red Lighted Pane
 
+//Lighted Door
+item.lighted_door_white.name=White Lighted Door
+
 //Tools
 //item.ruby_sword.name=Ruby Sword
 //item.ruby_shovel.name=Ruby Shovel
@@ -51,3 +54,4 @@ tile.lighted_pane_red.name=Red Lighted Pane
 
 //Creative Tab
 itemGroup.tab_LightMod=Light Mod
+

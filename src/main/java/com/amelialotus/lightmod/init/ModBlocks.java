@@ -3,18 +3,12 @@ package com.amelialotus.lightmod.init;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.amelialotus.lightmod.blocks.BlockBase;
-import com.amelialotus.lightmod.blocks.LightedGlassBlock;
-import com.amelialotus.lightmod.blocks.LightedGlassDoor;
 import com.amelialotus.lightmod.blocks.LightedGlassPane;
+import com.amelialotus.lightmod.blocks.door.BlockDoor;
+import com.amelialotus.lightmod.blocks.LightedGlassBlock;
 
 import net.minecraft.block.Block;
-import net.minecraft.block.BlockDoor;
-import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
-import net.minecraft.init.Bootstrap;
-import net.minecraft.item.Item;
-import net.minecraft.util.ResourceLocation;
 
 public class ModBlocks
 {
@@ -64,6 +58,6 @@ public class ModBlocks
 	public static final Block LIGHTED_PANE_RED = new LightedGlassPane("lighted_pane_red", Material.GLASS);
 	
 	//Glass Doors!
-	public static final Block LIGHTED_GLASS_DOOR = new LightedGlassDoor(Material.GLASS);
+	public static final BlockDoor BLOCK_DOOR = new BlockDoor("lighted_door_white", Material.GLASS, true, 1F);
 	
 	}

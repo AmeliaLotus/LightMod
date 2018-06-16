@@ -1,12 +1,8 @@
 package com.amelialotus.lightmod.blocks;
 
 import java.util.List;
-import java.util.Random;
 
 import javax.annotation.Nullable;
-
-import com.amelialotus.lightmod.Main;
-import com.amelialotus.lightmod.util.IHasModel;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockLeaves;
@@ -17,11 +13,8 @@ import net.minecraft.block.properties.PropertyBool;
 import net.minecraft.block.state.BlockFaceShape;
 import net.minecraft.block.state.BlockStateContainer;
 import net.minecraft.block.state.IBlockState;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.Entity;
 import net.minecraft.init.Blocks;
-import net.minecraft.init.Items;
-import net.minecraft.item.Item;
 import net.minecraft.util.BlockRenderLayer;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.Mirror;

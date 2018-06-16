@@ -3,16 +3,9 @@ package com.amelialotus.lightmod.init;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.amelialotus.lightmod.items.ItemBase;
+import com.amelialotus.lightmod.blocks.door.ItemDoor;
 
 import net.minecraft.item.Item;
-import net.minecraft.item.Item.ToolMaterial;
-import net.minecraft.item.ItemAxe;
-import net.minecraft.item.ItemHoe;
-import net.minecraft.item.ItemPickaxe;
-import net.minecraft.item.ItemSpade;
-import net.minecraft.item.ItemSword;
-import net.minecraftforge.common.util.EnumHelper;
 
 public class ModItems 
 {
@@ -33,5 +26,7 @@ public class ModItems
 	//public static final ItemPickaxe RUBY_PICKAXE = new ToolPickaxe("ruby_pickaxe", MATERIAL_RUBY);
 	//public static final ItemAxe RUBY_AXE = new ToolAxe("ruby_axe", MATERIAL_RUBY);
 	//public static final ItemHoe RUBY_HOE = new ToolHoe("ruby_hoe", MATERIAL_RUBY);
+	
+	public static ItemDoor ITEM_DOOR = new ItemDoor("lighted_door_white", ModBlocks.BLOCK_DOOR);
 
 }
