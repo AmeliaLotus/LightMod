@@ -5,6 +5,7 @@ import java.util.List;
 
 import com.amelialotus.lightmod.block.LightedGlassPane;
 import com.amelialotus.lightmod.block.door.BlockDoor;
+import com.amelialotus.lightmod.block.LightedFlower;
 import com.amelialotus.lightmod.block.LightedGlassBlock;
 
 import net.minecraft.block.Block;
@@ -25,9 +26,9 @@ public class BlockInit
 	//Glass Door!!
 	public static final BlockDoor BLOCK_DOOR = new BlockDoor("mydoor", Material.IRON, true, 1F, 2000.F);
 	
-	//Glass Blocks!
+	public static final Block LIGHTED_FLOWER = new LightedFlower(Material.PLANTS);
 	
-	
+	//Glass Blocks!	
 	public static final Block LIGHTED_GLASS_BLOCK = new LightedGlassBlock("lighted_glass_block", Material.GLASS);
 	public static final Block LIGHTED_GLASS_BLACK = new LightedGlassBlock("lighted_glass_black", Material.GLASS);
 	public static final Block LIGHTED_GLASS_ORANGE = new LightedGlassBlock("lighted_glass_orange", Material.GLASS);

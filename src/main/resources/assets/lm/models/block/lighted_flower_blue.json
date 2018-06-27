@@ -1,0 +1,6 @@
+{
+    "parent": "block/cross",
+    "textures": {
+        "cross": "lm:blocks/lighted_flower_blue"
+    }
+}
