@@ -47,8 +47,7 @@ public class LightedGlassPane extends BlockBase
         this.setDefaultState(this.blockState.getBaseState().withProperty(NORTH, Boolean.valueOf(false)).withProperty(EAST, Boolean.valueOf(false)).withProperty(SOUTH, Boolean.valueOf(false)).withProperty(WEST, Boolean.valueOf(false)));
         this.setResistance(2000.0F);
 		this.setLightLevel(1.0F);
-		setCreativeTab(LightMod.tabLightMod);
-        
+		setCreativeTab(LightMod.tabLightMod);        
     }//end constructor
     
     public void addCollisionBoxToList(IBlockState state, World worldIn, BlockPos pos, AxisAlignedBB entityBox, List<AxisAlignedBB> collidingBoxes, @Nullable Entity entityIn, boolean isActualState)
