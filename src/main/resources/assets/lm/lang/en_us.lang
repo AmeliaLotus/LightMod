@@ -44,6 +44,9 @@ tile.lighted_pane_red.name=Red Lighted Pane
 //Lighted Doors
 item.mydoor.name=Lighted Door
 
+//Lighted Flowers
+tile.lighted_flower_blue.name=Lighted Blue Flower
+
 //Tools
 //item.ruby_sword.name=Ruby Sword
 //item.ruby_shovel.name=Ruby Shovel
@@ -52,4 +55,4 @@ item.mydoor.name=Lighted Door
 //item.ruby_hoe.name=Ruby Hoe
 
 //Creative Tab
-itemGroup.tabLightMod=Light Mod
+itemGroup.tab_LightMod=Light Mod
