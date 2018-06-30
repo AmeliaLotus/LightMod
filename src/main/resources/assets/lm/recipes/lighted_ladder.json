@@ -1,0 +1,22 @@
+{ 
+    "type": "minecraft:crafting_shapeless",
+
+    "ingredients": 
+    [
+
+    {
+      "item": "minecraft:ladder"
+    },
+    
+    {
+      "item": "minecraft:glowstone_dust"
+    }
+    
+    ],
+
+    "result": 
+    {
+        "item": "lm:lighted_ladder",
+        "count": 1
+    }
+}
