@@ -4,11 +4,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.amelialotus.lightmod.block.LightedGlassPane;
+import com.amelialotus.lightmod.block.LightedLadder;
 import com.amelialotus.lightmod.block.door.BlockDoor;
+import com.amelialotus.lightmod.block.LightedFence;
 import com.amelialotus.lightmod.block.LightedFlower;
 import com.amelialotus.lightmod.block.LightedGlassBlock;
 
 import net.minecraft.block.Block;
+import net.minecraft.block.material.MapColor;
 import net.minecraft.block.material.Material;
 
 public class BlockInit 
@@ -26,7 +29,14 @@ public class BlockInit
 	//Glass Door!!
 	public static final BlockDoor BLOCK_DOOR = new BlockDoor("mydoor", Material.IRON, true, 1F, 2000.F);
 	
+	//Flower
 	public static final Block LIGHTED_FLOWER = new LightedFlower(Material.PLANTS);
+	
+	//Ladder
+	public static final Block LIGHTED_LADDER = new LightedLadder();
+	
+	//Fence
+	public static final Block LIGHTED_FENCE = new LightedFence(Material.WOOD, MapColor.BROWN);
 	
 	//Glass Blocks!	
 	public static final Block LIGHTED_GLASS_BLOCK = new LightedGlassBlock("lighted_glass_block", Material.GLASS);

@@ -1,8 +1,10 @@
 package com.amelialotus.lightmod;
 
+
 import com.amelialotus.lightmod.init.BlockInit;
 import com.amelialotus.lightmod.init.ItemInit;
 import com.amelialotus.lightmod.proxy.CommonProxy;
+import com.amelialotus.lightmod.util.InitConfig;
 import com.amelialotus.lightmod.util.Reference;
 import com.amelialotus.lightmod.util.handlers.RegistryHandler;
 
@@ -19,18 +21,32 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 @Mod(modid = Reference.MOD_ID, name = Reference.NAME, version = Reference.VERSION)
 public class LightMod 
 {
+	
 	@Instance
 	public static LightMod instance;
 	
 	@SidedProxy(clientSide = Reference.CLIENT, serverSide = Reference.COMMON)
 	public static CommonProxy proxy;
+	
 		
 	@EventHandler
-	public static void preInit(FMLPreInitializationEvent event) {RegistryHandler.preInitRegistries();}
+	public static void preInit(FMLPreInitializationEvent event) 
+	{
+		RegistryHandler.preInitRegistries();
+		InitConfig.preInit();
+	}
+	
 	@EventHandler
-	public static void init(FMLInitializationEvent event) {RegistryHandler.initRegistries();}
+	public static void init(FMLInitializationEvent event) 
+	{
+		RegistryHandler.initRegistries();
+	}
+	
 	@EventHandler
-	public static void postInit(FMLPostInitializationEvent event) {RegistryHandler.postInitRegistries();}
+	public static void postInit(FMLPostInitializationEvent event) 
+	{
+		RegistryHandler.postInitRegistries();
+	}
 	
 	public static CreativeTabs tabLightMod = new CreativeTabs("tab_LightMod") 
 	{		
