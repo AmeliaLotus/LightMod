@@ -21,7 +21,9 @@ public class LightedFence extends BlockFence implements IHasModel
 		setRegistryName(name);
 		setCreativeTab(LightMod.tabLightMod);
 		setLightLevel(1.0F);
+		this.setHardness(2);
 		this.setResistance(2000.0F);
+		this.useNeighborBrightness = true;
 		
 		BlockInit.BLOCKS.add(this);
 		ItemInit.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));

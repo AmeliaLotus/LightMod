@@ -1,8 +1,3 @@
-//Items
-
-//item.ruby.name=Ruby
-//item.obsidian_ingot.name=Obsidian Ingot
-
 //Blocks
 
 //Lighted Glass
@@ -47,12 +42,11 @@ item.mydoor.name=Lighted Door
 //Lighted Flowers
 tile.lighted_flower_blue.name=Lighted Blue Flower
 
-//Tools
-//item.ruby_sword.name=Ruby Sword
-//item.ruby_shovel.name=Ruby Shovel
-//item.ruby_pickaxe.name=Ruby Pickaxe
-//item.ruby_axe.name=Ruby Axe
-//item.ruby_hoe.name=Ruby Hoe
+//Lighted Ladder
+tile.lighted_ladder.name=Lighted Ladder
+
+//Lighted Fence
+tile.lighted_fence.name=Lighted Fence
 
 //Creative Tab
 itemGroup.tab_LightMod=Light Mod
