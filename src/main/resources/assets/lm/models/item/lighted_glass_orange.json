@@ -1,3 +1,6 @@
 {
-   "parent": "lm:block/lighted_glass_orange"
+   "parent": "block/cube_all",
+   "textures": {
+        "all": "lm:blocks/lighted_glass_orange"
+    }
 }

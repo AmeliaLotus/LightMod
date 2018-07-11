@@ -1,0 +1,12 @@
+{
+    "type": "CTM",
+    "ctm_version": 1,
+    "layer": "CUTOUT",
+    "textures": [
+        "blocks/lighted_glass_yellow",
+        "./lighted_glass_yellow"    
+    ],
+    "extra": {
+        "connect_inside": true
+    }
+}

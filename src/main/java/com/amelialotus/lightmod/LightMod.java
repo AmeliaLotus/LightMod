@@ -1,10 +1,10 @@
 package com.amelialotus.lightmod;
 
 
+import com.amelialotus.lightmod.config.LmConfig;
 import com.amelialotus.lightmod.init.BlockInit;
 import com.amelialotus.lightmod.init.ItemInit;
 import com.amelialotus.lightmod.proxy.CommonProxy;
-import com.amelialotus.lightmod.util.InitConfig;
 import com.amelialotus.lightmod.util.Reference;
 import com.amelialotus.lightmod.util.handlers.RegistryHandler;
 
@@ -33,7 +33,7 @@ public class LightMod
 	public static void preInit(FMLPreInitializationEvent event) 
 	{
 		RegistryHandler.preInitRegistries();
-		InitConfig.preInit();
+		LmConfig.preInit();
 	}
 	
 	@EventHandler

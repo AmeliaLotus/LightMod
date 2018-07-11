@@ -2,5 +2,10 @@
    "parent": "block/cube_all",
    "textures": {
        "all": "lm:blocks/lighted_glass_magenta"
+   },
+   "ctm": {
+        "model": { "model": "cube" },
+        "face": "lm:ctm/lighted_glass_magenta.cf"
+        
    }
 }
