@@ -1,0 +1,24 @@
+{
+    "type": "minecraft:crafting_shaped",
+   
+    "pattern":
+    [
+        "CC",
+        "CC",
+        "CC"
+    ],
+   
+    "key":
+    {
+        "C":
+        {
+            "item": "lm:lighted_glass_block"
+        }
+    },
+   
+    "result":
+    {
+        "item": "lm:mydoor",
+        "count": 3
+    }
+}
