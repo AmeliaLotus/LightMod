@@ -1,11 +1,12 @@
 package com.amelialotus.lightmod.block;
 
-import com.amelialotus.lightmod.LightMod;
-
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.util.BlockRenderLayer;
+import net.minecraft.util.EnumFacing;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.IBlockAccess;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
@@ -60,5 +61,10 @@ public class LightedGlassBlock extends BlockBase
 	protected boolean canSilkHarvest() {
 		return true;
 	}
-
+	
+	@Override
+	public boolean doesSideBlockRendering(IBlockState state, IBlockAccess world, BlockPos pos, EnumFacing side) {
+	    return world.getBlockState(pos.offset(side)).getBlock() == this;
+	}
+	
 }
